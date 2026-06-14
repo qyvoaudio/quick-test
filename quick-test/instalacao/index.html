@@ -527,10 +527,38 @@ footer .links { display: flex; gap: 22px; }
       <h2 class="so-title">Se você usa <em>Windows</em></h2>
     </div>
 
+    <!-- OPÇÃO SEM INSTALAR -->
+    <div class="opt recomendado" style="margin-bottom: 28px; max-width: 100%;">
+      <span class="opt-badge">SEM INSTALAR NADA · MAIS RÁPIDO</span>
+      <div class="opt-head">
+        <div class="opt-name">Mixagem estéreo (Stereo Mix)</div>
+        <div class="opt-price">a partir de<span class="v">R$ 0</span></div>
+      </div>
+      <p class="opt-desc">
+        A maioria dos Windows com placa <strong>Realtek</strong> já tem esse recurso nativo —
+        expõe "o que tá tocando" como se fosse um microfone. Só precisa habilitar.
+        Funciona pra rodar 1 live por PC sem instalar nenhum software extra.
+      </p>
+      <ol class="steps">
+        <li>Clica com <strong>botão direito</strong> no ícone de som na barra de tarefas (canto inferior direito)</li>
+        <li>Seleciona <strong>"Sons"</strong> (ou "Configurações de som" → "Mais opções de som")</li>
+        <li>Vai na aba <strong>"Gravação"</strong></li>
+        <li>Clica com <strong>botão direito em qualquer espaço vazio</strong> → marca <strong>"Mostrar dispositivos desabilitados"</strong></li>
+        <li>Procura por <code>Mixagem estéreo</code> (ou <code>Stereo Mix</code>, <code>What U Hear</code>) → clica com botão direito → <strong>Habilitar</strong></li>
+        <li>No <strong>Live Studio</strong>, vai em Configurações → Microfone → seleciona <code>Mixagem estéreo</code></li>
+      </ol>
+      <p class="opt-when">
+        <strong>Atenção:</strong> esse modo captura <strong>TUDO</strong> que o PC tocar — notificações,
+        sons de erro do Windows, alertas. Se for usar, <strong>silencia notificações</strong> antes de ir ao vivo
+        (Windows + I → Sistema → Notificações → desativa). E confere se sua placa tem essa opção;
+        se não aparecer no passo 5, vai pra Opção B abaixo.
+      </p>
+    </div>
+
     <div class="cards">
       <!-- GRÁTIS -->
       <div class="opt recomendado">
-        <span class="opt-badge">GRÁTIS · RECOMENDADO</span>
+        <span class="opt-badge">CABO VIRTUAL · GRÁTIS</span>
         <div class="opt-head">
           <div class="opt-name">VB-Cable</div>
           <div class="opt-price">a partir de<span class="v">R$ 0</span></div>
@@ -538,6 +566,8 @@ footer .links { display: flex; gap: 22px; }
         <p class="opt-desc">
           Cabo virtual mais usado no Windows. Donationware (contribuição opcional).
           Funciona em Windows 10 e 11, cobre 100% do Quick Test sem limitação.
+          <strong>Use essa opção se sua placa não tem Mixagem estéreo</strong> — ou se quer um setup mais limpo
+          sem capturar sons do sistema.
         </p>
         <ol class="steps">
           <li>Acessa <code>vb-audio.com/Cable</code></li>
@@ -622,6 +652,7 @@ footer .links { display: flex; gap: 22px; }
   <div class="links">
     <a href="/">Home</a>
     <a href="/quick-test/">Produto</a>
+    <a href="/quick-test/manual/">Manual de uso</a>
     <a href="https://qyvoaudio.github.io/quicktest-policy/" target="_blank">Privacidade</a>
     <a href="mailto:contato@qyvolive.com.br">Contato</a>
   </div>
